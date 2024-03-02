@@ -1,0 +1,89 @@
+// setting variables
+$primary-color: rgb(133, 196, 120);
+$secondary-color: #ffffff;
+
+@import 'reset';
+@import 'base';
+@import 'content';
+@import 'nav';
+
+html, body {
+  font-family: Arial;
+  font-size: 62.5%;
+  color: $secondary-color;
+}
+
+p, ul, ol, dl {
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 3.75rem;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 16px 0;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 14px 0 8px 0;
+}
+
+h4 {
+  font-size: 1.6rem;
+  margin: 14px 0 8px 0;
+}
+
+.container {
+  min-height: 100%;
+  display: flex;
+}
+
+.nav {
+  width: 15%;
+  min-width: 140px;
+  padding-top: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  color: $primary-color;
+
+  ul{
+    list-style-type: none;
+  }
+}
+
+.content {
+  width: 85%;
+  min-height: 750px;
+  min-width: 600px;
+  background-color: $primary-color;
+
+  > * {
+    padding-left: 30px;
+  }
+
+  p {
+    //adding font size and line height only to content div
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    width: 55%;
+    min-width: 550px;
+  }
+
+  img, video {
+    height: 350px;
+    width: 550px;
+    margin-bottom: 30px;
+  }
+
+  ul {
+    list-style-type: square;
+    list-style-position: inside;
+  }
+}
